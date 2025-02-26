@@ -1,0 +1,65 @@
+#juego {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content {
+    order: 2;
+    flex-grow: 2;
+    border: 1px dotted black;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.content div.word {
+    border: 1px solid black;
+    flex-grow: 2;
+}
+
+.content div.keyboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 1rem;
+}
+
+.content div.keyboard div {
+    width: 4rem;
+    height: 4rem;
+    background: #aa9dcd;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3px #222;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.content div.keyboard div:active {
+    transform: translateY(2px);
+    background:  #c6bce4;
+    box-shadow: 0 1px #111;
+}
+
+
+.info {
+    height: 5rem;
+    order: 1;
+    border: 1px solid black;
+}
+
+.stateBar {
+    height: 5rem;
+    order: 3;
+    border: 1px solid black;
+}
